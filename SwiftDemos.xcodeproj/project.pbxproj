@@ -36,6 +36,7 @@
 		022231241A5C242200764959 /* SwiftDemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		022231291A5C242200764959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0222312A1A5C242200764959 /* SwiftDemosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemosTests.swift; sourceTree = "<group>"; };
+		0280555B1A5C39CD00D177B4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				0222311B1A5C242200764959 /* Images.xcassets */,
 				0222311D1A5C242200764959 /* LaunchScreen.xib */,
 				022231121A5C242200764959 /* Supporting Files */,
+				0280555B1A5C39CD00D177B4 /* MyPlayground.playground */,
 			);
 			path = SwiftDemos;
 			sourceTree = "<group>";
@@ -405,6 +407,7 @@
 				022231301A5C242200764959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		022231311A5C242200764959 /* Build configuration list for PBXNativeTarget "SwiftDemosTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				022231331A5C242200764959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
