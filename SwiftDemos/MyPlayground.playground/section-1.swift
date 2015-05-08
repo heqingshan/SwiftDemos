@@ -94,6 +94,55 @@ var newKeys = Array(dic.keys)
 var newValues = Array(dic.values)
 */
 
+// 创建空字典
+var emptyDict = Dictionary<String, String>()
+// 初始化
+var airports: Dictionary<String, String> = ["T": "Tokyo", "D": "Doubin"]
+// 如果初始化，可以不明确指明类型，可以自动根据初始值推测出来
+var ariports = ["T": "Tokyo", "D": "Doubin"]
+
+// 访问和修改字典元素
+println("The dictionary of airports contains \(airports.count) items")
+// 添加新键值对
+ariports["L"] = "London"
+// 通过已经存在的键，修改对应的值
+airports["L"] = "London Heathrow"
+// 可以通过updateValue(forKey:)添加或者修改元素
+if let oldValue = airports.updateValue("Dubin Internation", forKey:"D") {
+    println("The old value for D was \(oldValue)")
+}
+
+// 通过下标键获取对应的值，返回的是一个Optional类型值,通过optional binding拆包
+if let airportName = airports["D"] {
+    println("The name of the airport is \(airportName)")
+} else {
+    println("That airport is not in the airports dictionary")
+}
+
+// 通过下标键移除键值对，只需要设置为nil
+airports["A"] = "Apple International"
+airports["A"] = nil // 移除
+
+// 可以通过removeValueForKey移除
+if let removeValue = airports.removeValueForKey("D") {
+    println("The remove airport's name is \(removeValue)")
+} else {
+    println("The airports dictionary does not contain a value for D")
+}
+
+// 通过键值对迭代字典
+for (key, airportName) in airports {
+    println("\(key): \(airportName)")
+}
+
+for key in airports.keys {
+    println("Airport code: \(key)")
+}
+
+for airportName in airports.values {
+    println("Airport name: \(airportName)")
+}
+
 /*
 
 var str = "Hello, playground"
